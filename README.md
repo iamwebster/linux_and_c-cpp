@@ -1,1 +1,0 @@
-VIM CHEAT SHEET: https://vim.rtorr.com/
