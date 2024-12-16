@@ -1,0 +1,14 @@
+При входе на новый сервер под рутом необходимо создать нового пользователя 
+adduser wwww
+далее добавить его в группу sudo 
+adduser www sudo 
+далее запретить вход под рут пользователем 
+vim /etc/ssh/sshd_config 
+PermitRootLogin no
+AllowUsers www
+
+далее для того чтобы работал докер необходимо нового пользователя добавить в группу докер 
+sudo usermod -aG docker $USER
+newgrp docker
+
+Готого 
